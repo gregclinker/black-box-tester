@@ -1,0 +1,31 @@
+{
+  "verbose": "true",
+  "host": "postman-echo.com",
+  "httpTests": [
+    {
+      "description": "Get Test",
+      "url": "https://${host}/get?foo1=bar1&foo2=bar2",
+      "method": "GET",
+      "expected": {
+        "httpStatus": 200,
+        "contains": [
+          "\"foo1\":\"bar1\"",
+          "\"foo2\":\"bar2\""
+        ]
+      }
+    },
+    {
+      "description": "Post Test",
+      "url": "https://${host}/post?hand=wave",
+      "method": "POST",
+      "body": "{\"message\":\"hello Greg\"}",
+      "expected": {
+        "httpStatus": 200,
+        "contains": [
+          "\"hand\": \"wave\""
+        ]
+      }
+    }
+  ]
+}
+

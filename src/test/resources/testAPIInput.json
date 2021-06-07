@@ -1,0 +1,18 @@
+{
+  "verbose": "true",
+  "refreshToken": "3d7a3467-32c3-3825-8ca6-bc6c5bc11248",
+  "clientId": "miHtDXKbXPlL1At1laWYwb22gsca",
+  "clientSecret": "TdmWnbTdYy32UJoG14cRNSkkgf0a",
+  "redirectUrl": "https://www.google.com",
+  "gatewayAlrayanbank": "gateway02.alrayanbank.co.uk",
+  "httpTests": [
+    {
+      "description": "get account balance",
+      "url": "https://gateway02.alrayanbank.co.uk/open-banking/v3.1/aisp/accounts/30008346340601/balances",
+      "method": "GET",
+      "expected": {
+        "httpStatus": 200
+      }
+    }
+  ]
+}
